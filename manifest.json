@@ -1,0 +1,54 @@
+{
+  "name": "YourSwingBuddy",
+  "short_name": "SwingBuddy",
+  "description": "# YourSwingBuddy - AI Golf Swing Analyzer\n\nYourSwingBuddy is your personal golf coach in your pocket. Our advanced AI-powered golf swing analysis app provides professional-grade biomechanical insights that help golfers of all skill levels improve their game.\n\n## Features:\n\n• **Dual Analysis Technology**: Combines cutting-edge YOLOv8 pose detection and Google Gemini AI for comprehensive swing analysis\n• **Video Upload**: Analyze your swing by uploading videos from any device - supports both high and low quality recordings\n• **Real-time Analysis**: Use your device's camera for instant feedback on your swing technique\n• **Detailed Breakdown**: Receive a complete assessment of your posture, tempo, and mechanics with a rating out of 10\n• **Personalized Drills**: Get 2-3 custom practice drills designed specifically to fix your swing weaknesses\n• **Works Offline**: Continue practicing even without an internet connection\n• **Cross-Platform**: Seamlessly works across mobile devices and tablets\n• **Coach Mode**: Special features for golf instructors to analyze and provide feedback to their students\n\n## Subscription Options:\nYourSwingBuddy offers a free tier with limited monthly analyses, plus premium subscription options for serious golfers and coaches.\n\nImprove your golf game faster with YourSwingBuddy - your AI-powered swing coach that fits in your pocket!",
+  "id": "com.yourswingbuddy.app",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "dir": "ltr",
+  "lang": "en",
+  "iarc_rating_id": "e84b072d-71b3-4d3e-86ae-31a8ce4e53b7",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "categories": [
+    "fitness",
+    "sports",
+    "utilities"
+  ],
+  "share_target": {
+    "action": "/share-target",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url",
+      "files": [
+        {
+          "name": "videos",
+          "accept": ["video/*"]
+        }
+      ]
+    }
+  }
+}
